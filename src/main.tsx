@@ -7,7 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Pages/Home.tsx";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
-import Galery from "./Pages/Galery";
+import Gallery from "./Pages/Gallery.tsx";
 import Package from "./Pages/Package";
 import ErrorPage from "./Pages/ErrorPage.tsx";
 
@@ -26,8 +26,8 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "galery",
-        element: <Galery />,
+        path: "gallery",
+        element: <Gallery />,
       },
       {
         path: "contact",
