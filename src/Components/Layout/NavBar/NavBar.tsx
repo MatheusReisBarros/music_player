@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../image/logo.png";
+import logo from "../../../image/logo.png";
 
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -15,7 +15,7 @@ const NavBar = () => {
       <div className="hidden sm:flex items-center justify-around w-7/12">
         <Link to="/" className="hover:text-white font-medium">HOME</Link>
         <Link to="about" className="hover:text-white font-medium">ABOUT</Link>
-        <Link to="package" className="hover:text-white font-medium">PACKAGE</Link>
+        <Link to="store" className="hover:text-white font-medium">STORE</Link>
         <Link to="gallery" className="hover:text-white font-medium">GALLERY</Link>
         <Link to="contact" className="hover:text-white font-medium">CONTACT</Link>
       </div>
@@ -56,8 +56,8 @@ const NavBar = () => {
                 ABOUT
               </Link>
               <hr className="border-black"/>
-              <Link to="/package" className="rounded text-base text hover:text-white">
-                PACKAGE
+              <Link to="/store" className="rounded text-base text hover:text-white">
+                STORE
               </Link>
               <hr className="border-black"/>
               <Link to="/gallery" className="rounded text-base text hover:text-white">

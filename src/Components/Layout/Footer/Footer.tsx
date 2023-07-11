@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook,  faTwitter,  faInstagram } from "@fortawesome/free-brands-svg-icons"; 
 
@@ -11,7 +10,7 @@ const Footer = () => {
           <h2 className="font-medium">SITEMAP</h2>
           <Link to="/" className="hover:text-white">HOME</Link>
           <Link to="about" className="hover:text-white">ABOUT</Link>
-          <Link to="package" className="hover:text-white">PACKAGE</Link>
+          <Link to="store" className="hover:text-white">STORE</Link>
           <Link to="gallery" className="hover:text-white">GALLERY</Link>
           <Link to="contact" className="hover:text-white">CONTACT</Link>
         </div>
@@ -37,11 +36,11 @@ const Footer = () => {
           <h2 className="font-medium">SUBSCRIBE</h2>
           <label>
             <input
-              className="bg-white w-8/12"
+              className="bg-white w-8/12 border-none focus:outline-none"
               placeholder="Enter email"
               type="email"
               name="search"
-              prettier-ignore
+              required
             />
             <button className="bg-black text-white">SEND</button>
           </label>
